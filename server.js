@@ -4,7 +4,9 @@ const http = require('http')
 const request = require('request')
 const Stripe = require('stripe')
 const bodyParser = require('body-parser')
-const stripe = Stripe(process.env.STRIPE_SECRET || 'sk_test_NS6kWKJP3mD2gQ8lEYNlY8oR00wcBUhC5G')
+// const stripe = Stripe(process.env.STRIPE_SECRET || 'sk_test_NS6kWKJP3mD2gQ8lEYNlY8oR00wcBUhC5G')
+const stripe = Stripe(process.env.STRIPE_SECRET || 'pk_test_LS7jCkcufUnHCHHZR8VxNyfa00y6tuJlJS')
+
 const database = require('./database')
 
 app.use(bodyParser.json())
